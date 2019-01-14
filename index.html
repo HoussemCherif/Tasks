@@ -39,14 +39,14 @@ let avance =()=>{ song.currentTime+= 10; }
 		song.currentTime = 0;
 	}
 
-	let play = play()=>{ 
+	let play = ()=>{ 
 		
 		document.body.style.backgroundColor = colors[(score.innerHTML % colors.length)];
 		score.innerHTML++;
 		song.play(); 
 	}
 
-	let pause = pause()=>{ song.pause(); }
+	let pause = ()=>{ song.pause(); }
 
 	setInterval(pause,1000);
 
