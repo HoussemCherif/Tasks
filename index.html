@@ -30,11 +30,11 @@
 	let score = document.getElementById("score");
 	let colors = ["green","skyblue","red","black","white","beige"];
 
-let avance = avance()=>{ song.currentTime+= 10; }
+let avance =()=>{ song.currentTime+= 10; }
 
-	let wakhir= wakhir()=>{ song.currentTime-= 10; }
+	let wakhir=()=>{ song.currentTime-= 10; }
 
-	let reset= reset()=>{
+	let reset= ()=>{
 		score.innerHTML=0;
 		song.currentTime = 0;
 	}
